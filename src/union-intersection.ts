@@ -35,7 +35,7 @@ type JuniorDeveloper1 = NoobDeveloper & {
 
 
 const newDeveloper1: JuniorDeveloper1 = {
-    name: "saif",
+    name: "saif",   
     expertise: 'React JS Developer',
     experience: 7,
 }
