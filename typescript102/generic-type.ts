@@ -25,12 +25,12 @@ type GenericArrayType<T> = Array<T>;
 const rollNumers4Type: number[] = [44, 34, 12];
 
 // angle bracket syntax
-const rollNumers05Type: GenericArray<number> = [44, 34, 12];
+const rollNumers05Type: GenericArrayType<number> = [44, 34, 12];
 const rollNumers06Type: Array<string> = ["44", "23", "11"];
 const rollNumers07Type: Array<boolean> = [true, false];
 
 type NameRollTYpeType = { name: string; role: string };
-const userNameAndRoll02Type: GenericArray<NameRollTYpe> = [
+const userNameAndRoll02Type: GenericArrayType<NameRollTYpeType> = [
   {
     name: "saif",
     role: "web developer",
@@ -53,7 +53,7 @@ interface ObjectEleInterface {
   salary: number;
 }
 
-const relationWithSalaryType: GenericTuple<ObjectEleInterface, string> = [
+const relationWithSalaryType: GenericTupleType<ObjectEleInterface, string> = [
   {
     name: "saif",
     salary: 12500,
