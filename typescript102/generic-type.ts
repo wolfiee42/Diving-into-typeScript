@@ -36,7 +36,7 @@ const userNameAndRoll02Type: GenericArrayType<NameRollTYpeType> = [
     role: "web developer",
   },
   {
-    name: "Ashik",
+    name: "Ashik Siraj",
     role: "Bussiness man",
   },
 ];
