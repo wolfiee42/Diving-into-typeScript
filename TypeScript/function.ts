@@ -65,3 +65,13 @@ function calculateExpenses(message: string, ...expenses: number[]): string {
 
 let aprilExpense = calculateExpenses("Total expense of the 5 members of the house are", 2000, 3000, 1000, 5000, 1500);
 console.log(aprilExpense);
+
+
+// void data type
+
+function SayMessage(message: string): void {
+    console.log(`${message}`);
+    // return "shunamiya"
+};
+
+SayMessage("Hi, Typescript")
