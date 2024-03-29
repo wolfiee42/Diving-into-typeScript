@@ -75,8 +75,8 @@ const book1: Book = {
         console.log(`${this.name} ${message}`);
     }
 };
-book1.printAuthor();
-book1.printMessage("is a great book")
+// book1.printAuthor();
+// book1.printMessage("is a great book")
 // book1.isbn = 11221
 
 
@@ -93,3 +93,42 @@ const book2: Book = {
     }
 };
 // book2.printMessage('is a must read book.')
+
+
+
+// chanllenges
+
+interface Computer {
+    readonly id: number;
+    brand: string;
+    ram: number;
+    upgradeRam(newRam: number): number;  // method
+    storage?: number;
+};
+
+
+const myPC: Computer = {
+    id: 123,
+    brand: "apple macbok pro",
+    ram: 8,
+    upgradeRam(newRam) {
+        this.ram += newRam;
+        return this.ram
+    }
+};
+console.log(myPC.upgradeRam(8));
+console.log(myPC);
+
+const morzPC: Computer = {
+    id: 88675,
+    brand: "Ryzen 5600",
+    ram: 8,
+    upgradeRam(newRam) {
+        this.ram += newRam;
+        return this.ram
+    },
+};
+
+console.log(morzPC.upgradeRam(16));
+morzPC.storage = 512;
+console.log(morzPC);
